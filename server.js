@@ -26,15 +26,15 @@ app.post('/mail',function(req,resp){
     var smtpTransport = nodemailer.createTransport("SMTP",{
         service: "Gmail",
         auth: {
-            user: "pdutt111@@gmail.com",
-            pass: "inception11"
+            user: "",
+            pass: ""
         }
     });
 
 // setup e-mail data with unicode symbols
     var mailOptions = {
-        from: "pdutt111@gmail.com",
-        to: "pdutt111@gmail.com",
+        from: "",
+        to: "",
         subject: "form fill mail",
         text: "name: "+req.query.name+"\nemail: "+req.query.email+"\nmessage: "+req.query.message
     }
